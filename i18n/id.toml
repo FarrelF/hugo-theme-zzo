@@ -1,0 +1,119 @@
+[search-placeholder]
+other = "Cari"
+
+[summary-dateformat]
+other = "02 Januari 2006"
+
+[reading-time]
+other = "min read"
+
+[tags]
+other = "Tag"
+
+[categories]
+other = "Kategori"
+
+[series]
+other = "Seri"
+
+[archive-dateformat]
+other = "02 Jan"
+
+[talks-dateformat]
+other = "02 Jan"
+
+[single-dateformat]
+other = "02 Januari 2006"
+
+[pub-dateformat]
+other = "02/01/2006"
+
+[resume-dateformat]
+other = "02 Januari 2006"
+
+[single-related]
+other = "Lihat Juga"
+
+[single-writtenBy]
+other = "DITULIS OLEH"
+
+[toc-label]
+other = "Apa yang ada di Halaman ini?"
+
+[counter-site-pv]
+other = "Jumlah penayangan"
+
+[counter-site-uv]
+other = "Total pengunjung"
+
+[counter-page-pv]
+other = "penayangan"
+
+[donate-message]
+other = "Dukung Penulis dengan"
+
+[share-message]
+other = "Bagikan di"
+
+[contact-name]
+other = "Nama"
+
+[contact-email]
+other = "Alamat Surel"
+
+[contact-tel]
+other = "No. Telepon"
+
+[contact-file]
+other = "Berkas"
+
+[contact-message]
+other = "Pesan"
+
+[contact-send]
+other = "Kirim"
+
+[contact-browse]
+other = "Jelajahi"
+
+[tooltip-home]
+other = "Beranda"
+
+[tooltip-written]
+other = "Ditulis Pada"
+
+[tooltip-modified]
+other = "Diubah Pada"
+
+[tooltip-reading-time]
+other = "Waktu Membaca"
+
+[showcase-overview]
+other = "Gambaran"
+
+[showcase-pinned]
+other = "Di Pin"
+
+[nojs-message]
+other = "Halaman ini akan terlihat baik jika JavaScript di aktifkan"
+
+[posts-by-order]
+other = "POSTING TERATAS"
+
+[skin-dark]
+other = "Gelap"
+
+[skin-light]
+other = "Terang"
+
+[skin-hacker]
+other = "Hacker"
+
+[skin-solarized]
+other = "Solarized"
+
+[skin-kimbie]
+other = "Kimbie"
+
+[no-contents]
+other = "Tidak ada yang di tampilkan"
