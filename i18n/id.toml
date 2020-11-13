@@ -23,7 +23,7 @@ other = "02 Jan 2006"
 other = "02 Jan 2006"
 
 [single-dateformat]
-other = "02 January 2006"
+other = "Monday, 02 January 2006"
 
 [pub-dateformat]
 other = "02/01/2006"

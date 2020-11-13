@@ -1,4 +1,19 @@
 {{ $params := .Params }}
+{{ if and .Site.Params.localTime (eq .Site.Language.Lang "id") }}
+<div class="single__infos">
+  <time class="single__info" title="{{ i18n "tooltip-written" }}">📅&nbsp;{{ index $.Site.Data.time_id.weekdayname .Date.Weekday }}, {{ .Date.Day }} {{ index $.Site.Data.time_id.months .Date.Month }} {{ .Date.Year }} </time>
+  {{ if ne (.Date.Format (i18n "summary-dateformat")) (.Lastmod.Format (i18n "summary-dateformat")) }}
+  &nbsp;&middot;&nbsp; <time class="single__info" title="{{ i18n "tooltip-modified" }}"> 📝&nbsp;{{ index $.Site.Data.time_id.weekdayname .Lastmod.Weekday }}, {{ .Lastmod.Day }} {{ index $.Site.Data.time_id.months .Lastmod.Month }} {{ .Lastmod.Year }} </time>
+  {{ end }}
+  &nbsp;&middot;&nbsp; <span class="single__info" title="{{ i18n "tooltip-reading-time" }}"> ☕&nbsp;{{ .ReadingTime }}&nbsp;{{ i18n "reading-time" }} </span>
+  {{ with .Params.Author }}
+  &nbsp;&middot;&nbsp; <span class="single__info" title="{{ i18n "single-writtenBy" }}">{{if $params.AuthorEmoji }}{{ $params.AuthorEmoji }}{{ else }}✍️{{ end }}&nbsp;{{ . }}</span>
+  {{ end }}
+  <span class="single__info">
+    {{ if (and .Site.Params.enableBusuanzi .Site.Params.busuanziPagePV) }} &middot; 👀<span id="busuanzi_value_page_pv">...</span> {{ i18n "counter-page-pv" }}{{ end }}
+  </span>
+</div>
+{{ else }}
 <div class="single__infos">
   <time class="single__info" title="{{ i18n "tooltip-written" }}">📅&nbsp;{{ .Date.Format (i18n "single-dateformat") }} </time>
   {{ if ne (.Date.Format (i18n "summary-dateformat")) (.Lastmod.Format (i18n "summary-dateformat")) }}
@@ -12,3 +27,4 @@
     {{ if (and .Site.Params.enableBusuanzi .Site.Params.busuanziPagePV) }} &middot; 👀<span id="busuanzi_value_page_pv">...</span> {{ i18n "counter-page-pv" }}{{ end }}
   </span>
 </div>
+{{ end }}

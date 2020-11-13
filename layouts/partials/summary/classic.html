@@ -19,9 +19,17 @@
       <header>
         <h5 class="title h5"><a href='{{ .Permalink }}'>{{- with .Params.pinned -}}📌&nbsp;{{- end -}}{{ .Title }}</a> </h5>
         <h6 class="subtitle caption">
+          {{ if and .Site.Params.localTime (eq .Site.Language.Lang "id") }}
+          <time title="{{ i18n "tooltip-written" }}" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">📅&nbsp;{{ index $.Site.Data.time_id.weekdayname .Date.Weekday }}, {{ .Date.Day }} {{ index $.Site.Data.time_id.months .Date.Month }} {{ .Date.Year }} </time>
+          {{ else }}
           <time title="{{ i18n "tooltip-written" }}" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}">📅&nbsp;{{ .Date.Format (i18n "summary-dateformat") }} </time>
+          {{ end }}
           {{ if ne (.Date.Format (i18n "summary-dateformat")) (.Lastmod.Format (i18n "summary-dateformat")) }}
+          {{ if and .Site.Params.localTime (eq .Site.Language.Lang "id") }}
+          <time title="{{ i18n "tooltip-modified" }}" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}"> &middot; 📝&nbsp;{{ index $.Site.Data.time_id.weekdayname .Lastmod.Weekday }}, {{ .Lastmod.Day }} {{ index $.Site.Data.time_id.months .Lastmod.Month }} {{ .Lastmod.Year }} </time>
+          {{ else }}
           <time title="{{ i18n "tooltip-modified" }}" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}"> &middot; 📝&nbsp;{{ .Lastmod.Format (i18n "summary-dateformat") }} </time>
+          {{ end }}
           {{ end }}
           <span title="{{ i18n "tooltip-reading-time" }}" dir="{{ if ne ($.Param "languagedir") "rtl" }}ltr{{ else }}rtl{{ end }}"> &middot; ☕&nbsp;{{ .ReadingTime }}&nbsp;{{ i18n "reading-time" }} </span>
           {{ with $.Param "author" }}
