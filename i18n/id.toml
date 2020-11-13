@@ -2,10 +2,10 @@
 other = "Cari"
 
 [summary-dateformat]
-other = "02 Januari 2006"
+other = "Monday, 02 January 2006"
 
 [reading-time]
-other = "min read"
+other = "Menit untuk Membaca"
 
 [tags]
 other = "Tag"
@@ -17,19 +17,19 @@ other = "Kategori"
 other = "Seri"
 
 [archive-dateformat]
-other = "02 Jan"
+other = "02 Jan 2006"
 
 [talks-dateformat]
-other = "02 Jan"
+other = "02 Jan 2006"
 
 [single-dateformat]
-other = "02 Januari 2006"
+other = "02 January 2006"
 
 [pub-dateformat]
 other = "02/01/2006"
 
 [resume-dateformat]
-other = "02 Januari 2006"
+other = "02 January 2006"
 
 [single-related]
 other = "Lihat Juga"
@@ -117,3 +117,62 @@ other = "Kimbie"
 
 [no-contents]
 other = "Tidak ada yang di tampilkan"
+
+# Nama-nama Hari
+[Monday]
+other = "Senin"
+
+[Tuesday]
+other = "Selasa"
+
+[Wednesday]
+other = "Rabu"
+
+[Thursday]
+other = "Kamis"
+
+[Friday]
+other = "Jum'at"
+
+[Saturday]
+other = "Sabtu"
+
+[Sunday]
+other = "Minggu"
+
+# Nama-nama Bulan
+[January]
+other = "Januari"
+
+[February]
+other = "Februari"
+
+[March]
+other = "Maret"
+
+[April]
+other = "April"
+
+[May]
+other = "Mei"
+
+[June]
+other = "June"
+
+[July]
+other = "Juli"
+
+[August]
+other = "Agustus"
+
+[September]
+other = "September"
+
+[October]
+other = "Oktober"
+
+[November]
+other = "November"
+
+[December]
+other = "Desember"
